@@ -8,10 +8,5 @@ export const IMG_PATHS = {
   LIVE_BACKGROUND: './images/3p_bg.png',
   LIVE_PAD: '/images/3p_pad.png',
   LIVE_VIDEO: './images/3p_live-video.mp4',
-  READING_BOOK1: './images/4p_book_1.png',
-  READING_BOOK2: './images/4p_book_2.png',
-  READING_BOOK3: './images/4p_book_3.png',
-  READING_CHECK1: './images/4p_check1.gif',
-  READING_CHECK2: './images/4p_check2.gif',
-  READING_CHECK3: './images/4p_check3.gif',
+  DAIARY_PHONE: './images/5p_phone.png',
 };

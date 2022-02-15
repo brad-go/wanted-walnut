@@ -1,5 +1,4 @@
 import type { NavLinkType, ReadingBooksType } from 'types/data';
-import { IMG_PATHS } from './constants';
 
 export const NAV_LINKS: NavLinkType[] = [
   {
@@ -32,15 +31,22 @@ export const INTRO_PHRASE: string[] = [
 
 export const READING_BOOKS: ReadingBooksType[] = [
   {
-    check: IMG_PATHS.READING_CHECK1,
-    book: IMG_PATHS.READING_BOOK1,
+    check: './images/4p_check1.gif',
+    book: './images/4p_book_1.png',
   },
   {
-    check: IMG_PATHS.READING_CHECK2,
-    book: IMG_PATHS.READING_BOOK2,
+    check: './images/4p_check2.gif',
+    book: './images/4p_book_2.png',
   },
   {
-    check: IMG_PATHS.READING_CHECK3,
-    book: IMG_PATHS.READING_BOOK3,
+    check: './images/4p_check3.gif',
+    book: './images/4p_book_3.png',
   },
+];
+
+export const DIARY_IMGS: string[] = [
+  './images/5p_img1.png',
+  './images/5p_img2.png',
+  './images/5p_img3.png',
+  './images/5p_img4.png',
 ];
