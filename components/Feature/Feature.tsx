@@ -51,8 +51,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 945px;
-  padding: 150px 0;
+  padding-top: 150px;
   background-color: ${COLORS.GREY};
   overflow: hidden;
 `;
