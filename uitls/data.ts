@@ -1,6 +1,7 @@
-import type { navLinkType } from 'types/data';
+import type { NavLinkType, ReadingBooksType } from 'types/data';
+import { IMG_PATHS } from './constants';
 
-export const NAV_LINKS: navLinkType[] = [
+export const NAV_LINKS: NavLinkType[] = [
   {
     path: '/book',
     name: '도서구매',
@@ -27,4 +28,19 @@ export const INTRO_PHRASE: string[] = [
   '책 읽는 재미,',
   '땅콩 스쿨이',
   '만들어줄게요!',
+];
+
+export const READING_BOOKS: ReadingBooksType[] = [
+  {
+    check: IMG_PATHS.READING_CHECK1,
+    book: IMG_PATHS.READING_BOOK1,
+  },
+  {
+    check: IMG_PATHS.READING_CHECK2,
+    book: IMG_PATHS.READING_BOOK2,
+  },
+  {
+    check: IMG_PATHS.READING_CHECK3,
+    book: IMG_PATHS.READING_BOOK3,
+  },
 ];

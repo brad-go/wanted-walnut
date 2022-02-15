@@ -1,1 +1,1 @@
-export type { navLinkType } from './data';
+export type { NavLinkType } from './data';
