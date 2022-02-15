@@ -40,7 +40,6 @@ const useScroll = () => {
       setCheckAnimation(false);
     }
   }, [scrollY]);
-  console.log(scrollY);
 
   return {
     backgroundTransparency,
