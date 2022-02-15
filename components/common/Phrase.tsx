@@ -1,18 +1,24 @@
-import { COLORS, FONT_WEIGHT } from 'uitls/constants';
-import { alignLine } from 'uitls';
+import { COLORS, FONT_WEIGHT } from 'utils/constants';
+import { alignLine } from 'utils';
 import styled, { css } from 'styled-components';
 
 interface PhrasePropsType {
   title: string;
   content?: string;
   alignment?: boolean;
+  nit?: boolean;
 }
 
-const Phrase = ({ title, content, alignment = false }: PhrasePropsType) => {
+const Phrase = ({
+  title,
+  content,
+  alignment = false,
+  nit = false,
+}: PhrasePropsType) => {
   return (
-    <Container alignment={alignment}>
+    <Container alignment={alignment} nit={nit}>
       <Wrapper>
-        <TitleBox alignment={alignment}>
+        <TitleBox alignment={alignment} nit={nit}>
           <Title>{alignLine(title)}</Title>
         </TitleBox>
         {content && (
@@ -25,9 +31,9 @@ const Phrase = ({ title, content, alignment = false }: PhrasePropsType) => {
   );
 };
 
-const Container = styled.div<{ alignment: boolean }>`
+const Container = styled.div<{ alignment: boolean; nit: boolean }>`
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: ${(props) => (props.nit ? '0px' : '40px')};
   color: ${COLORS.TEXT};
   text-align: ${(props) => props.alignment && `center`};
   word-break: keep-all;
@@ -39,9 +45,10 @@ const Wrapper = styled.div`
   gap: 50px;
 `;
 
-const TitleBox = styled.div<{ alignment: boolean }>`
+const TitleBox = styled.div<{ alignment: boolean; nit: boolean }>`
   position: relative;
-  height: 142px;
+  /* height: 142px; */
+  height: ${(props) => (props.nit ? '122px' : '142px')};
   padding-right: 30px;
   ${(props) =>
     props.alignment &&

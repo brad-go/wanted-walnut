@@ -10,6 +10,7 @@ const useScroll = () => {
 
   const [autoPlay, setAutoPlay] = useState<boolean>(false);
   const [checkAnimation, setCheckAnimation] = useState<boolean>(false);
+  const [ticketActive, setTicketActive] = useState<boolean>(false);
 
   const handleScroll = useCallback(() => {
     setScrollY(window.pageYOffset);
@@ -31,14 +32,9 @@ const useScroll = () => {
   }, [scrollY]);
 
   useEffect(() => {
-    if (scrollY > 756) {
-      setAutoPlay(true);
-    }
-    if (scrollY > 1680) {
-      setCheckAnimation(true);
-    } else {
-      setCheckAnimation(false);
-    }
+    scrollY > 756 && setAutoPlay(true);
+    scrollY > 1680 ? setCheckAnimation(true) : setCheckAnimation(false);
+    scrollY > 7800 ? setTicketActive(true) : setTicketActive(false);
   }, [scrollY]);
 
   return {
@@ -47,6 +43,7 @@ const useScroll = () => {
     filter,
     autoPlay,
     checkAnimation,
+    ticketActive,
     handleScroll,
   };
 };
