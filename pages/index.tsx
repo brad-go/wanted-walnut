@@ -7,7 +7,7 @@ import {
   ReadingList,
   LiveAccess,
   Diary,
-  Challenge,
+  ImageSlider,
   Feature,
   Footer,
 } from 'components/index';
@@ -21,7 +21,7 @@ const Home: NextPage = () => {
       <ReadingList />
       <LiveAccess />
       <Diary />
-      <Challenge />
+      <ImageSlider />
       <Feature />
       <Footer />
     </Layout>

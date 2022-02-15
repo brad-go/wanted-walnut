@@ -1,8 +1,8 @@
 import { Phrase } from 'components/common';
-import { SLIDE_IMGS } from 'uitls/data';
+import { Slide } from './Slide';
 import styled from 'styled-components';
 
-const Challenge = () => {
+const ImageSlider = () => {
   return (
     <Wrapper>
       <Phrase
@@ -13,13 +13,7 @@ const Challenge = () => {
         alignment={true}
       />
       <SlideWrapper>
-        <SlideTrack>
-          <Slide>
-            {SLIDE_IMGS.map((path, idx) => {
-              return <img key={idx} src={path} alt="slide-img" />;
-            })}
-          </Slide>
-        </SlideTrack>
+        <Slide />
       </SlideWrapper>
     </Wrapper>
   );
@@ -34,13 +28,10 @@ const Wrapper = styled.section`
 `;
 
 const SlideWrapper = styled.div`
+  margin-top: 20px;
+  margin-bottom: 110px;
   overflow-x: hidden;
+  overflow-y: hidden;
 `;
 
-const SlideTrack = styled.div``;
-
-const Slide = styled.div`
-  display: flex;
-`;
-
-export default Challenge;
+export default ImageSlider;
