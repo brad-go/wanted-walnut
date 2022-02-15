@@ -9,19 +9,19 @@ import {
   Diary,
   Challenge,
 } from 'components/index';
+import Feature from 'components/Feature/Feature';
 
 const Home: NextPage = () => {
   return (
     <Layout>
-      <>
-        <Intro />
-        <Banner />
-        <LiveClass />
-        <ReadingList />
-        <LiveAccess />
-        <Diary />
-        <Challenge />
-      </>
+      <Intro />
+      <Banner />
+      <LiveClass />
+      <ReadingList />
+      <LiveAccess />
+      <Diary />
+      <Challenge />
+      <Feature />
     </Layout>
   );
 };

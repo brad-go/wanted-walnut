@@ -11,4 +11,7 @@ export const IMG_PATHS = {
   ACCESS_PAD: '/images/5p_pad.png',
   ACCESS_PHONE: '/images/5p_phone.png',
   DIARY_PHONE: './images/6p_phone.png',
+  FEATURE_FIRST: '/images/8p_first.png',
+  FEATURE_SECOND: '/images/8p_second.png',
+  FEATURE_THIRD: '/images/8p_third.png',
 };
