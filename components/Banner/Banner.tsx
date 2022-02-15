@@ -1,7 +1,7 @@
 import React from 'react';
 import Img from 'next/image';
+import { COLORS, FONT_WEIGHT, IMG_PATHS } from 'uitls/constants';
 import styled from 'styled-components';
-import { COLORS, FONT_SIZE } from 'uitls/constants';
 
 const Banner = () => {
   return (
@@ -11,7 +11,7 @@ const Banner = () => {
           <Img
             width="144"
             height="100"
-            src="/assets/2p_logo-animation.gif"
+            src={IMG_PATHS.BANNER_LOGO}
             alt="logo-animation"
           />
         </BannerLogo>
@@ -33,7 +33,7 @@ const Container = styled.section`
   width: 100%;
   height: 573px;
   background-color: ${COLORS.PRIMARY};
-  color: ${COLORS.PHRASE};
+  color: ${COLORS.WHITE};
 `;
 
 const Wrapper = styled.div`
@@ -50,13 +50,13 @@ const BannerLogo = styled.div``;
 const BannerTitle = styled.h2`
   margin-bottom: 50px;
   font-size: 50px;
-  font-weight: ${FONT_SIZE.THIN}
+  font-weight: ${FONT_WEIGHT.THIN}
   ling-height: 72px;
 `;
 
 const BannerPhrase = styled.p`
   font-size: 24px;
-  font-weight: ${FONT_SIZE.NORMAL};
+  font-weight: ${FONT_WEIGHT.NORMAL};
   text-align: center;
   line-height: 40px;
   white-space: pre-wrap;

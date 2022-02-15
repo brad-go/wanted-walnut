@@ -1,6 +1,7 @@
+import React from 'react';
 import Link from 'next/link';
 import useHeader from 'hooks/useHeader';
-import { navLinks } from 'uitls';
+import { NAV_LINKS } from 'uitls';
 import { COLORS } from 'uitls/constants';
 import styled from 'styled-components';
 
@@ -26,7 +27,7 @@ const Header = ({}) => {
             </Logo>
           </Link>
           <NavList>
-            {navLinks.map((link, idx) => {
+            {NAV_LINKS.map((link, idx) => {
               return (
                 <li key={idx}>
                   <Link href={link.path}>
@@ -52,7 +53,7 @@ const Wrapper = styled.header<HeaderStylePropsType>`
   padding: 0 30px;
   background-color: ${(props) =>
     `rgba(255, 255, 255, ${props.backgroundTransparency})`};
-  color: ${(props) => (props.filter > 50 ? COLORS.TEXT : COLORS.PHRASE)};
+  color: ${(props) => (props.filter > 50 ? COLORS.TEXT : COLORS.WHITE)};
   box-shadow: ${(props) =>
     `rgb(0, 0, 0 / ${props.boxShadow}) 0px 0px 20px 6px`};
   z-index: 100;
@@ -99,4 +100,4 @@ const NavList = styled.div`
   }
 `;
 
-export default Header;
+export default React.memo(Header);

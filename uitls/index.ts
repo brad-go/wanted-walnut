@@ -1,1 +1,1 @@
-export { navLinks } from './data';
+export { NAV_LINKS, INTRO_PHRASE } from './data';

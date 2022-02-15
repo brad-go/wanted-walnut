@@ -1,20 +1,19 @@
 import MouseSVG from 'assets/mouse.svg';
-import { FONT_SIZE } from 'uitls/constants/fonts';
+import { INTRO_PHRASE } from 'uitls/data';
+import { FONT_WEIGHT, IMG_PATHS } from 'uitls/constants';
 import styled, { keyframes } from 'styled-components';
-
-export const introPhrase = ['책 읽는 재미,', '땅콩 스쿨이', '만들어줄게요!'];
 
 const Intro = () => {
   return (
     <Cotainer>
       <Wrapper>
         <PhraseContainer>
-          {introPhrase.map((phrase, idx) => {
+          {INTRO_PHRASE.map((phrase, idx) => {
             return (
               <PhraseWrapper key={idx}>
                 {idx === 1 && (
                   <Star>
-                    <img src="./assets/starIntro.png" alt="star"></img>
+                    <img src={IMG_PATHS.INTRO_STAR} alt="star"></img>
                   </Star>
                 )}
                 {idx === 1 ? (
@@ -41,7 +40,7 @@ const Cotainer = styled.section`
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url('./assets/bgIntro.png');
+  background-image: url(${IMG_PATHS.INTRO_BACKGROUND});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -52,7 +51,7 @@ const Wrapper = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url('./assets/kidsIntro.png');
+  background-image: url(${IMG_PATHS.INTRO_KIDS});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -79,7 +78,7 @@ const Phrase = styled.h2`
   display: inline-block;
   color: white;
   font-size: 60px;
-  font-weight: ${FONT_SIZE.THICK};
+  font-weight: ${FONT_WEIGHT.THICK};
   line-height: 80px;
 `;
 
@@ -88,7 +87,7 @@ const UnderLine = styled.div`
   top: 70px;
   width: 220px;
   height: 11px;
-  background-image: url('./assets/line.png');
+  background-image: url(${IMG_PATHS.INTRO_LINE});
   background: no-repeat cover center;
 `;
 
