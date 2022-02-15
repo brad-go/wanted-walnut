@@ -73,3 +73,9 @@ export const SLIDE_IMGS: string[] = [
   '/images/slideImages/img_book_19.png',
   '/images/slideImages/img_book_20.png',
 ];
+
+export const FEATURE_ICONS: string[] = [
+  '/images/8p_videoclass.png',
+  '/images/8p_bidirectional.png',
+  '/images/8p_character.png',
+];

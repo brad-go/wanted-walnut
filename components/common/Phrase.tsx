@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components';
 
 interface PhrasePropsType {
   title: string;
-  content: string;
+  content?: string;
   alignment?: boolean;
 }
 
@@ -15,9 +15,11 @@ const Phrase = ({ title, content, alignment = false }: PhrasePropsType) => {
         <TitleBox alignment={alignment}>
           <Title>{alignLine(title)}</Title>
         </TitleBox>
-        <ContentBox alignment={alignment}>
-          <Content>{alignLine(content)}</Content>
-        </ContentBox>
+        {content && (
+          <ContentBox alignment={alignment}>
+            <Content>{alignLine(content)}</Content>
+          </ContentBox>
+        )}
       </Wrapper>
     </Container>
   );

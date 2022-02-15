@@ -1,9 +1,9 @@
-import React, { ReactChild } from 'react';
+import React, { ReactChildren } from 'react';
 import { Header } from 'components/index';
 import styled from 'styled-components';
 
 interface LayoutPropType {
-  children: ReactChild;
+  children: React.ReactNode;
 }
 
 const Layout = ({ children }: LayoutPropType) => {
