@@ -1,4 +1,4 @@
-import { Phrase } from 'components/LiveClass/Phrase';
+import { Phrase } from 'components/common';
 import useScroll from 'hooks/useScroll';
 import { READING_BOOKS } from 'uitls/data';
 import { COLORS } from 'uitls/constants';
