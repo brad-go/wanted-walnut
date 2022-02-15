@@ -17,7 +17,7 @@ const Diary = () => {
           {DIARY_IMGS.map((img) => {
             return <DiaryImg src={img} />;
           })}
-          <Phone src={IMG_PATHS.DAIARY_PHONE} />
+          <Phone src={IMG_PATHS.DIARY_PHONE} />
         </ImageWrapper>
       </Wrapper>
     </Container>

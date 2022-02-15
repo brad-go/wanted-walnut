@@ -45,8 +45,8 @@ export const READING_BOOKS: ReadingBooksType[] = [
 ];
 
 export const DIARY_IMGS: string[] = [
-  './images/5p_img1.png',
-  './images/5p_img2.png',
-  './images/5p_img3.png',
-  './images/5p_img4.png',
+  './images/6p_img1.png',
+  './images/6p_img2.png',
+  './images/6p_img3.png',
+  './images/6p_img4.png',
 ];
