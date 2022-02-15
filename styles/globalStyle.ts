@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
+import { COLORS } from 'uitls/constants';
 
 export const GlobalStyle = createGlobalStyle`
   ${reset}
@@ -12,6 +13,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     width: 100%;
     height: 100%;
+    color: ${COLORS.TEXT};
   }
   a {
     color: inherit;

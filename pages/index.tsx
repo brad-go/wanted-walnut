@@ -8,8 +8,9 @@ import {
   LiveAccess,
   Diary,
   Challenge,
+  Feature,
+  Footer,
 } from 'components/index';
-import Feature from 'components/Feature/Feature';
 
 const Home: NextPage = () => {
   return (
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
       <Diary />
       <Challenge />
       <Feature />
+      <Footer />
     </Layout>
   );
 };
