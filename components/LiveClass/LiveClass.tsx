@@ -2,8 +2,8 @@ import ReactPlayer from 'react-player';
 import Img from 'next/image';
 import { Phrase } from './Phrase';
 import { COLORS, IMG_PATHS } from 'uitls/constants';
-import styled from 'styled-components';
 import useScroll from 'hooks/useScroll';
+import styled from 'styled-components';
 
 const LiveClass = () => {
   const { autoPlay } = useScroll();
@@ -26,7 +26,7 @@ const LiveClass = () => {
               loop
               muted={autoPlay}
               playing={autoPlay}
-              url="./images/3p_live-video.mp4"
+              url={IMG_PATHS.LIVE_VIDEO}
               width="100%"
               height="100%"
             />

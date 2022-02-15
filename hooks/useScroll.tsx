@@ -9,6 +9,7 @@ const useScroll = () => {
   const [filter, setFilter] = useState<number>(0);
 
   const [autoPlay, setAutoPlay] = useState<boolean>(false);
+  const [checkAnimation, setCheckAnimation] = useState<boolean>(false);
 
   const handleScroll = useCallback(() => {
     setScrollY(window.pageYOffset);
@@ -33,9 +34,20 @@ const useScroll = () => {
     if (scrollY > 756) {
       setAutoPlay(true);
     }
+    if (scrollY > 1680) {
+      setCheckAnimation(true);
+    } else {
+      setCheckAnimation(false);
+    }
   }, [scrollY]);
 
-  return { backgroundTransparency, boxShadow, filter, autoPlay };
+  return {
+    backgroundTransparency,
+    boxShadow,
+    filter,
+    autoPlay,
+    checkAnimation,
+  };
 };
 
 export default useScroll;

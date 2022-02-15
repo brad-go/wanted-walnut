@@ -1,5 +1,5 @@
 import { Layout } from 'Layout';
-import { Intro, Banner, LiveClass } from 'components/index';
+import { Intro, Banner, LiveClass, ReadingList } from 'components/index';
 import type { NextPage } from 'next';
 
 const Home: NextPage = () => {
@@ -9,6 +9,7 @@ const Home: NextPage = () => {
         <Intro />
         <Banner />
         <LiveClass></LiveClass>
+        <ReadingList></ReadingList>
       </>
     </Layout>
   );
