@@ -9,10 +9,11 @@ import {
   Diary,
   ImageSlider,
 } from 'components/index';
+import Feature from 'components/Feature/Feature';
 
 const Home: NextPage = () => {
   return (
-    <Layout>
+    <Layout
       <>
         <Intro />
         <Banner />
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
         <LiveAccess />
         <Diary />
         <ImageSlider />
+        <Feature />
       </>
     </Layout>
   );
