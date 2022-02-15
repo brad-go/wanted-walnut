@@ -1,7 +1,14 @@
-import { Layout } from 'Layout';
-import { Intro, Banner, LiveClass, ReadingList, Diary } from 'components/index';
 import type { NextPage } from 'next';
-import LiveAccess from 'components/LiveAccess/LiveAccess';
+import { Layout } from 'Layout';
+import {
+  Intro,
+  Banner,
+  LiveClass,
+  ReadingList,
+  LiveAccess,
+  Diary,
+  Challenge,
+} from 'components/index';
 
 const Home: NextPage = () => {
   return (
@@ -9,10 +16,11 @@ const Home: NextPage = () => {
       <>
         <Intro />
         <Banner />
-        <LiveClass></LiveClass>
-        <ReadingList></ReadingList>
-        <LiveAccess></LiveAccess>
+        <LiveClass />
+        <ReadingList />
+        <LiveAccess />
         <Diary />
+        <Challenge />
       </>
     </Layout>
   );

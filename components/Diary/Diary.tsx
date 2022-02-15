@@ -1,7 +1,7 @@
 import { Phrase } from 'components/common';
 import { DIARY_IMGS } from 'uitls/data';
-import styled from 'styled-components';
 import { COLORS, IMG_PATHS } from 'uitls/constants';
+import styled from 'styled-components';
 
 const Diary = () => {
   return (
@@ -14,10 +14,10 @@ const Diary = () => {
           alignment={true}
         />
         <ImageWrapper>
-          {DIARY_IMGS.map((img) => {
-            return <DiaryImg src={img} />;
+          {DIARY_IMGS.map((img, idx) => {
+            return <DiaryImg key={idx} src={img} />;
           })}
-          <Phone src={IMG_PATHS.DIARY_PHONE} />
+          <Phone src={IMG_PATHS.DIARY_PHONE} alt="phone" />
         </ImageWrapper>
       </Wrapper>
     </Container>

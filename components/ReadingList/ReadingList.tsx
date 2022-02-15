@@ -1,4 +1,4 @@
-import { Phrase } from 'components/common';
+import { Phrase, Check } from 'components/common';
 import useScroll from 'hooks/useScroll';
 import { READING_BOOKS } from 'uitls/data';
 import { COLORS } from 'uitls/constants';
@@ -23,8 +23,11 @@ const ReadingList = () => {
           {READING_BOOKS.map((book, idx) => (
             <BooksWrapper key={idx}>
               <CheckWrapper>
-                {/* 하나씩 렌더링 어떻게? */}
-                {checkAnimation && <Check src={book.check} />}
+                <Check
+                  checkAnimation={checkAnimation}
+                  src={book.check}
+                  wait={(idx + 1) * 500}
+                />
               </CheckWrapper>
               <Book src={book.book} />
             </BooksWrapper>
@@ -76,11 +79,6 @@ const CheckWrapper = styled.div`
   width: 184px;
   height: 134px;
   padding-right: 20px;
-`;
-
-const Check = styled.img`
-  width: 100%;
-  hegiht: 100%;
 `;
 
 const Book = styled.img`

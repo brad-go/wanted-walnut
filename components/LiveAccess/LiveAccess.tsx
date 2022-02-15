@@ -1,6 +1,6 @@
 import { Phrase } from 'components/common';
-import styled from 'styled-components';
 import { IMG_PATHS } from 'uitls/constants';
+import styled from 'styled-components';
 
 const LiveAccess = () => {
   return (

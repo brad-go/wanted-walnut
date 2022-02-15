@@ -50,3 +50,26 @@ export const DIARY_IMGS: string[] = [
   './images/6p_img3.png',
   './images/6p_img4.png',
 ];
+
+export const SLIDE_IMGS: string[] = [
+  '/images/slideImages/img_book_1.png',
+  '/images/slideImages/img_book_2.png',
+  '/images/slideImages/img_book_3.png',
+  '/images/slideImages/img_book_4.png',
+  '/images/slideImages/img_book_5.png',
+  '/images/slideImages/img_book_6.png',
+  '/images/slideImages/img_book_7.png',
+  '/images/slideImages/img_book_8.png',
+  '/images/slideImages/img_book_9.png',
+  '/images/slideImages/img_book_10.png',
+  '/images/slideImages/img_book_11.png',
+  '/images/slideImages/img_book_12.png',
+  '/images/slideImages/img_book_13.png',
+  '/images/slideImages/img_book_14.png',
+  '/images/slideImages/img_book_15.png',
+  '/images/slideImages/img_book_16.png',
+  '/images/slideImages/img_book_17.png',
+  '/images/slideImages/img_book_18.png',
+  '/images/slideImages/img_book_19.png',
+  '/images/slideImages/img_book_20.png',
+];
