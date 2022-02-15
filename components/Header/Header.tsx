@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import useScroll from 'hooks/useScroll';
-import { NAV_LINKS } from 'uitls';
-import { COLORS, IMG_PATHS } from 'uitls/constants';
+import { NAV_LINKS } from 'utils';
+import { COLORS, IMG_PATHS } from 'utils/constants';
 import styled from 'styled-components';
 
 interface HeaderStylePropsType {
@@ -75,7 +75,7 @@ const Nav = styled.nav`
 
 const Logo = styled.a<HeaderStylePropsType>`
   width: 154.5px;
-  heigth: inherit;
+  height: inherit;
   img {
     width: 100%;
     height: 100%;

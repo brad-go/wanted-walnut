@@ -1,7 +1,7 @@
 import { Phrase, Check } from 'components/common';
 import useScroll from 'hooks/useScroll';
-import { READING_BOOKS } from 'uitls/data';
-import { COLORS } from 'uitls/constants';
+import { READING_BOOKS } from 'utils/data';
+import { COLORS } from 'utils/constants';
 import styled from 'styled-components';
 
 const ReadingList = () => {

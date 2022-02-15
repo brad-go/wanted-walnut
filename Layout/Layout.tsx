@@ -8,10 +8,10 @@ interface LayoutPropType {
 
 const Layout = ({ children }: LayoutPropType) => {
   return (
-    <Wrapper>
+    <React.Fragment>
       <Header />
       {children}
-    </Wrapper>
+    </React.Fragment>
   );
 };
 

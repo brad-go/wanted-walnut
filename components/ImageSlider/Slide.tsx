@@ -1,4 +1,4 @@
-import { SLIDE_IMGS } from 'uitls/data';
+import { SLIDE_IMGS } from 'utils/data';
 import styled, { keyframes } from 'styled-components';
 
 export const Slide = () => {

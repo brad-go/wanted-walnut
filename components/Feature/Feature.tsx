@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Phrase } from 'components/common';
-import { COLORS, IMG_PATHS } from 'uitls/constants';
-import { alignLine, FEATURE_ICONS } from 'uitls';
+import { COLORS, IMG_PATHS } from 'utils/constants';
+import { alignLine, FEATURE_ICONS } from 'utils';
 
 interface PositionType {
   img: string;

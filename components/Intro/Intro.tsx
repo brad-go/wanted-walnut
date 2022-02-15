@@ -1,6 +1,6 @@
 import MouseSVG from 'assets/mouse.svg';
-import { INTRO_PHRASE } from 'uitls/data';
-import { FONT_WEIGHT, IMG_PATHS } from 'uitls/constants';
+import { INTRO_PHRASE } from 'utils/data';
+import { FONT_WEIGHT, IMG_PATHS } from 'utils/constants';
 import styled, { keyframes } from 'styled-components';
 
 const Intro = () => {
@@ -98,7 +98,7 @@ const Star = styled.div`
   display: inline-block;
   width: 51.42px;
   height: 52.18px;
-  z-inde: 10;
+  z-index: 10;
 `;
 
 const runningMotion = keyframes`

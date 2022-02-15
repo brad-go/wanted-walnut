@@ -1,5 +1,5 @@
 import { Phrase } from 'components/common';
-import { IMG_PATHS } from 'uitls/constants';
+import { IMG_PATHS } from 'utils/constants';
 import styled from 'styled-components';
 
 const LiveAccess = () => {
@@ -30,7 +30,6 @@ const Container = styled.div`
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  algin-items: center;
   width: 100%;
   max-width: 1200px;
   height: 100%;

@@ -1,6 +1,6 @@
 import React from 'react';
 import Img from 'next/image';
-import { COLORS, FONT_WEIGHT, IMG_PATHS } from 'uitls/constants';
+import { COLORS, FONT_WEIGHT, IMG_PATHS } from 'utils/constants';
 import styled from 'styled-components';
 
 const Banner = () => {
@@ -50,8 +50,8 @@ const BannerLogo = styled.div``;
 const BannerTitle = styled.h2`
   margin-bottom: 50px;
   font-size: 50px;
-  font-weight: ${FONT_WEIGHT.THIN}
-  ling-height: 72px;
+  font-weight: ${FONT_WEIGHT.THIN};
+  line-height: 72px;
 `;
 
 const BannerPhrase = styled.p`

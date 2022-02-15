@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { IMG_PATHS } from 'uitls/constants';
+import { IMG_PATHS } from 'utils/constants';
 
 const Footer = () => {
   return (

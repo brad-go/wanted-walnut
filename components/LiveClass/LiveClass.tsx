@@ -1,7 +1,7 @@
 import ReactPlayer from 'react-player';
 import Img from 'next/image';
 import { Phrase } from 'components/common';
-import { COLORS, IMG_PATHS } from 'uitls/constants';
+import { COLORS, IMG_PATHS } from 'utils/constants';
 import useScroll from 'hooks/useScroll';
 import styled from 'styled-components';
 
@@ -42,7 +42,7 @@ const Container = styled.section`
   height: 938px;
   margin: -5px 0;
   background-image: url(${IMG_PATHS.LIVE_BACKGROUND});
-  background-postion: center;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: ${COLORS.WHITE};

@@ -1,6 +1,6 @@
 import { Phrase } from 'components/common';
-import { DIARY_IMGS } from 'uitls/data';
-import { COLORS, IMG_PATHS } from 'uitls/constants';
+import { DIARY_IMGS } from 'utils/data';
+import { COLORS, IMG_PATHS } from 'utils/constants';
 import styled from 'styled-components';
 
 const Diary = () => {
@@ -43,7 +43,7 @@ const ImageWrapper = styled.div`
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  algin-items: center;
+  align-items: center;
   justify-content: center;
   margin-top: 44px;
 `;

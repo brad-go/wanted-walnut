@@ -14,6 +14,7 @@ export const IMG_PATHS = {
   FEATURE_FIRST: '/images/8p_first.png',
   FEATURE_SECOND: '/images/8p_second.png',
   FEATURE_THIRD: '/images/8p_third.png',
+  TICKET_IMG: '/images/10p_ticket.png',
   FOOTER_INSTAGRAM: '/images/11p_insta.png',
   FOOTER_CAFE: '/images/11p_cafe.png',
 };
