@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-import useHeader from 'hooks/useHeader';
+import useScroll from 'hooks/useScroll';
 import { NAV_LINKS } from 'uitls';
-import { COLORS } from 'uitls/constants';
+import { COLORS, IMG_PATHS } from 'uitls/constants';
 import styled from 'styled-components';
 
 interface HeaderStylePropsType {
@@ -12,7 +12,7 @@ interface HeaderStylePropsType {
 }
 
 const Header = ({}) => {
-  const { backgroundTransparency, boxShadow, filter } = useHeader();
+  const { backgroundTransparency, boxShadow, filter } = useScroll();
   return (
     <Wrapper
       backgroundTransparency={backgroundTransparency}
@@ -23,7 +23,7 @@ const Header = ({}) => {
         <Nav>
           <Link href="/">
             <Logo filter={filter}>
-              <img src="./assets/logo.png" alt="title" />
+              <img src={IMG_PATHS.HEADER_LOGO} alt="title" />
             </Logo>
           </Link>
           <NavList>
