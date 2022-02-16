@@ -75,7 +75,6 @@ const SampleComponent = ({ onClick, selected }: **SampleComponentProps**) => {
 
 - 무한 캐러셀 구현
 - 애니메이션 이미지 슬라이드 구현
-- 간단한 대화를 할 수 있는 **Messenger** 컴포넌트 구현
 - 전체 애니메이션 관리
 
 #### :cherry_blossom:\_최효정
