@@ -22,4 +22,7 @@ export const GlobalStyle = createGlobalStyle`
   ul {
     list-style: none;
   }
+  button {
+    all: unset;
+  }
 `;

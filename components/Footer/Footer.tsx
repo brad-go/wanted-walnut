@@ -1,5 +1,5 @@
+import { COLORS, IMG_PATHS } from 'utils/constants';
 import styled from 'styled-components';
-import { IMG_PATHS } from 'utils/constants';
 
 const Footer = () => {
   return (
@@ -58,6 +58,7 @@ const Container = styled.div`
   gap: 479px;
   padding: 60px;
   overflow: hidden;
+  background-color: ${COLORS.WHITE};
 `;
 
 const Info = styled.div`

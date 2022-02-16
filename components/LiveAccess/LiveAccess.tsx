@@ -1,5 +1,5 @@
 import { Phrase } from 'components/common';
-import { IMG_PATHS } from 'utils/constants';
+import { COLORS, IMG_PATHS } from 'utils/constants';
 import styled from 'styled-components';
 
 const LiveAccess = () => {
@@ -25,6 +25,7 @@ const LiveAccess = () => {
 const Container = styled.div`
   width: 100%;
   height: 1397px;
+  background-color: ${COLORS.WHITE};
 `;
 
 const Wrapper = styled.div`

@@ -9,6 +9,7 @@ import {
   Diary,
   ImageSlider,
   Feature,
+  PostScript,
   Ticket,
   Footer,
 } from 'components/index';
@@ -24,6 +25,7 @@ const Home: NextPage = () => {
       <Diary />
       <ImageSlider />
       <Feature />
+      <PostScript />
       <Ticket />
       <Footer />
     </Layout>

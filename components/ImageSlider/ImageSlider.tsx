@@ -1,5 +1,6 @@
 import { Phrase } from 'components/common';
 import { Slide } from './Slide';
+import { COLORS } from 'utils/constants';
 import styled from 'styled-components';
 
 const ImageSlider = () => {
@@ -25,6 +26,7 @@ const Wrapper = styled.section`
   width: 100%;
   height: 868px;
   padding-top: 150px;
+  background-color: ${COLORS.WHITE};
 `;
 
 const SlideWrapper = styled.div`

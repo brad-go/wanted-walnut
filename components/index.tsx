@@ -7,5 +7,6 @@ export { default as Diary } from './Diary/Diary';
 export { default as LiveAccess } from './LiveAccess/LiveAccess';
 export { default as ImageSlider } from './ImageSlider/ImageSlider';
 export { default as Feature } from './Feature/Feature';
+export { default as PostScript } from './PostScript/PostScript';
 export { default as Ticket } from './Ticket/Ticket';
 export { default as Footer } from './Footer/Footer';
