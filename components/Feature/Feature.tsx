@@ -33,7 +33,6 @@ const BOOKMARKS: PositionType[] = [
 
 const Feature = () => {
   const { bookmarkActive } = useScroll();
-  console.log(bookmarkActive);
 
   return (
     <Container>

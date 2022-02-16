@@ -38,8 +38,6 @@ const useScroll = () => {
     scrollY > 5800 ? setBookmarkActive(true) : setBookmarkActive(false);
     scrollY > 7800 ? setTicketActive(true) : setTicketActive(false);
   }, [scrollY]);
-  console.log(scrollY);
-  console.log(bookmarkActive);
 
   return {
     backgroundTransparency,
