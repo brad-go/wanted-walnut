@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { POSTSCRIPTS_DATA, SLIDER_DATA_LIST, SLIDE_WIDTH } from 'utils/data';
+import { alignLine } from 'utils';
 import { COLORS, IMG_PATHS } from 'utils/constants';
 import styled from 'styled-components';
 
@@ -72,7 +73,7 @@ const PostScript = () => {
                   return (
                     <Slide key={idx} motion={motion}>
                       <Id>{postscript.id}</Id>
-                      <Content>{postscript.content}</Content>
+                      <Content>{alignLine(postscript.content)}</Content>
                     </Slide>
                   );
                 })}
@@ -264,7 +265,9 @@ const Id = styled.span`
 `;
 
 const Content = styled.span`
+  margin-top: 30px;
   font-size: 20px;
+  text-align: center;
   line-height: 1.8;
 `;
 
