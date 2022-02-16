@@ -8,7 +8,6 @@
     }
   },
   "extends": [
-    "react-app",
     "plugin:@next/next/recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier/prettier"

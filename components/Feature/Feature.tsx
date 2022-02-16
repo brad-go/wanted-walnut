@@ -94,7 +94,7 @@ const Bookmark = styled.div<{
   ${(props) =>
     props.bookmarkActive
       ? css`
-          transition: all ${(props.idx + 1) * 2}s;
+          transition: all ${(props.idx + 1) * 0.9}s;
           margin-top: 0px;
 
           opacity: 1;

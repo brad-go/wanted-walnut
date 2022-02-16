@@ -1,5 +1,5 @@
 import React from 'react';
-import Img from 'next/image';
+// import Img from 'next/image';
 import { COLORS, FONT_WEIGHT, IMG_PATHS } from 'utils/constants';
 import styled from 'styled-components';
 
@@ -8,10 +8,8 @@ const Banner = () => {
     <Container>
       <Wrapper>
         <BannerLogo>
-          <Img
-            width="144"
-            height="100"
-            src={IMG_PATHS.BANNER_LOGO}
+          <Logo
+            src={IMG_PATHS.BANNER_LOGO + `?a=${Math.random()}`}
             alt="logo-animation"
           />
         </BannerLogo>
@@ -46,6 +44,11 @@ const Wrapper = styled.div`
 `;
 
 const BannerLogo = styled.div``;
+
+const Logo = styled.img`
+  width: 144px;
+  height: 100px;
+`;
 
 const BannerTitle = styled.h2`
   margin-bottom: 50px;
