@@ -25,7 +25,6 @@ const Check = React.memo(({ checkAnimation, src, wait }: CheckProps) => {
 
 const CheckContainer = styled.img`
   width: 100%;
-  hegiht: 100%;
 `;
 
 export default Check;

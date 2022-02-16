@@ -1,7 +1,9 @@
-import styled from 'styled-components';
+import React from 'react';
 import { Phrase } from 'components/common';
-import { COLORS, IMG_PATHS } from 'utils/constants';
+import useScroll from 'hooks/useScroll';
 import { alignLine, FEATURE_ICONS } from 'utils';
+import { COLORS, IMG_PATHS } from 'utils/constants';
+import styled, { css } from 'styled-components';
 
 interface PositionType {
   img: string;
@@ -30,12 +32,20 @@ const BOOKMARKS: PositionType[] = [
 ];
 
 const Feature = () => {
+  const { bookmarkActive } = useScroll();
+  console.log(bookmarkActive);
+
   return (
     <Container>
-      <Phrase title="땅콩스쿨만의 특징" alignment />
+      <Phrase title="땅콩스쿨만의 특징" alignment nit={true} />
       <Wrapper>
         {BOOKMARKS.map(({ img, title, content }, idx) => (
-          <Bookmark key={idx} style={{ backgroundImage: `url(${img})` }}>
+          <Bookmark
+            key={idx}
+            style={{ backgroundImage: `url(${img})` }}
+            bookmarkActive={bookmarkActive}
+            idx={idx}
+          >
             <img src={FEATURE_ICONS[idx]} alt={title} width="80" height="80" />
             <Title>{title}</Title>
             <Content>{alignLine(content)}</Content>
@@ -51,6 +61,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
+  height: 945px;
   padding-top: 150px;
   background-color: ${COLORS.GREY};
   overflow: hidden;
@@ -65,7 +76,11 @@ const Wrapper = styled.div`
   width: 1380px;
 `;
 
-const Bookmark = styled.div`
+const Bookmark = styled.div<{
+  bookmarkActive: boolean;
+  key: number;
+  idx: number;
+}>`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,6 +91,21 @@ const Bookmark = styled.div`
   background-size: 460px 700px;
   background-position: top center;
   background-repeat: no-repeat;
+  opacity: 0;
+  ${(props) =>
+    props.bookmarkActive
+      ? css`
+          transition: all ${(props.idx + 1) * 2}s;
+          margin-top: 0px;
+
+          opacity: 1;
+        `
+      : css`
+          transition: none;
+          margin-top: 80px;
+
+          opacity: 0;
+        `}
 `;
 
 const Title = styled.h3`

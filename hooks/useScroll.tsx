@@ -10,6 +10,7 @@ const useScroll = () => {
 
   const [autoPlay, setAutoPlay] = useState<boolean>(false);
   const [checkAnimation, setCheckAnimation] = useState<boolean>(false);
+  const [bookmarkActive, setBookmarkActive] = useState<boolean>(false);
   const [ticketActive, setTicketActive] = useState<boolean>(false);
 
   const handleScroll = useCallback(() => {
@@ -34,8 +35,11 @@ const useScroll = () => {
   useEffect(() => {
     scrollY > 756 && setAutoPlay(true);
     scrollY > 1680 ? setCheckAnimation(true) : setCheckAnimation(false);
+    scrollY > 5800 ? setBookmarkActive(true) : setBookmarkActive(false);
     scrollY > 7800 ? setTicketActive(true) : setTicketActive(false);
   }, [scrollY]);
+  console.log(scrollY);
+  console.log(bookmarkActive);
 
   return {
     backgroundTransparency,
@@ -44,6 +48,7 @@ const useScroll = () => {
     autoPlay,
     checkAnimation,
     ticketActive,
+    bookmarkActive,
     handleScroll,
   };
 };
