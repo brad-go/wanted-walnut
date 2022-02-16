@@ -49,7 +49,7 @@ const Wrapper = styled.header<HeaderStylePropsType>`
   display: flex;
   align-items: center;
   width: 100%;
-  height: 90px;
+  height: 80px;
   padding: 0 30px;
   background-color: ${(props) =>
     `rgba(255, 255, 255, ${props.backgroundTransparency})`};
@@ -63,7 +63,7 @@ const NavBar = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
-  height: 90px;
+  height: 80px;
 `;
 
 const Nav = styled.nav`
@@ -76,6 +76,7 @@ const Nav = styled.nav`
 const Logo = styled.a<HeaderStylePropsType>`
   width: 154.5px;
   height: inherit;
+  cursor: pointer;
   img {
     width: 100%;
     height: 100%;
