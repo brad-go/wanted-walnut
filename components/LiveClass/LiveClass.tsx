@@ -20,7 +20,7 @@ const LiveClass = () => {
           ></Phrase>
         </PhraseWrapper>
         <PadWrapper>
-          <Img width="746" height="574" src={IMG_PATHS.LIVE_PAD}></Img>
+          <PadImg src={IMG_PATHS.LIVE_PAD} alt="padImg" />
           <PadVideo>
             <ReactPlayer
               loop
@@ -71,6 +71,11 @@ const PadWrapper = styled.div`
   align-items: center;
   width: 1060px;
   height: 868px;
+`;
+
+const PadImg = styled.img`
+  width: 746px;
+  height: 574px;
 `;
 
 const PadVideo = styled.div`
