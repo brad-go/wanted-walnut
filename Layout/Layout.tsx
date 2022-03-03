@@ -15,9 +15,4 @@ const Layout = ({ children }: LayoutPropType) => {
   );
 };
 
-const Wrapper = styled.main`
-  width: 100%;
-  height: 100%;
-`;
-
 export default Layout;
