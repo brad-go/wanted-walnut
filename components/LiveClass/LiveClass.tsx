@@ -1,5 +1,4 @@
 import ReactPlayer from 'react-player';
-import Img from 'next/image';
 import { Phrase } from 'components/common';
 import { COLORS, IMG_PATHS } from 'utils/constants';
 import useScroll from 'hooks/useScroll';

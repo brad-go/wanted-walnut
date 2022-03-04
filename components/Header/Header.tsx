@@ -47,6 +47,7 @@ const Wrapper = styled.header<HeaderStylePropsType>`
   position: fixed;
   top: 0;
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 80px;
@@ -63,12 +64,13 @@ const NavBar = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
+  max-width: 1140px;
   height: 80px;
 `;
 
 const Nav = styled.nav`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
   height: 50px;
 `;

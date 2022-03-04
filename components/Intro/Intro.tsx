@@ -48,15 +48,20 @@ const Cotainer = styled.section`
 `;
 
 const Wrapper = styled.div`
-  position: absolute;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   width: 100%;
   height: 100%;
+  margin: 0px auto;
   background-image: url(${IMG_PATHS.INTRO_KIDS});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   backdrop-filter: saturate(200%) grayscale(20%) brightness(90%);
-  box-shadow: inset 60px 60px 500px rgba(120, 75, 0, 0.6);
+  box-shadow: inset 60px 60px 500px rgba(109, 79, 26, 0.445);
   user-select: none;
 `;
 
@@ -65,17 +70,19 @@ const PhraseContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  max-width: 1140px;
   margin-top: 230px;
-  padding: 0 380px;
+  padding: 0;
 `;
 
 const PhraseWrapper = styled.div`
   position: relative;
-  width: 70%;
+  width: 100%;
   height: 80px;
 `;
+
 const Phrase = styled.h2`
-  display: inline-block;
+  display: block;
   color: white;
   font-size: 60px;
   font-weight: ${FONT_WEIGHT.THICK};
