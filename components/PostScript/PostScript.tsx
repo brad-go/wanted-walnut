@@ -208,7 +208,7 @@ const BtnNext = styled.button`
 
 const BtnImg = styled.img`
   width: 44px;
-  height: 40px;
+  height: 44px;
 `;
 
 const SwiperWrapper = styled.div`
